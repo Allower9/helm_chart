@@ -55,5 +55,20 @@ helm rollback my-release 3 -n web
 │       └── test-connection.yaml
 └── values.yaml
 ```
+####  Где обязательные Chart.yaml templates values.yaml
+
 #### Создание
 ` helm create <имя чарта> `
+
+
+#### Dry run — это пробный запуск, который поможет вам убедиться, что чарт устойчиво работает с самим Kubernetes. 
+
+`helm install my-release <путь до чарта> --dry-run `
+
+#### архивируем
+`helm package mychart `
+
+
+
+<img width="2881" height="1009" alt="image" src="https://github.com/user-attachments/assets/c70bff2b-e983-4f45-a42f-f03dd7219542" />
+
